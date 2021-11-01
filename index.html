@@ -2,19 +2,24 @@
 <html>
 <head>
 
- <title style="color:green;">My favorite city</title>
-  <link rel="icon" href="favicon.ico">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="Ghazal av">
-<meta name="description" content="My favorite city">
+   <title style="color:green;">My favorite city</title>
+   <link rel="icon" href="favicon.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="Ghazal av">
+   <meta name="description" content="My favorite city">
+   <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-
-
-
-<div style="margin-left:20px; border:1px solid gray; padding:20px; ">
-  <input type="search"  placeholder="Search Name of the city..." style="width:400px;" >
-  <button>Search</button>
+<div id="header"> 
+<h1> My Favorite City </h1>
+<h6>By Ghazal Allahverdi </h6>
+</div>
+<div id="cont">
+<div class="bottom">
+	<div class="center">
+	 <input type="search"  placeholder=" Search Name of the city..." style="width:400px;"  id="inpt">
+  <button id="btn">Search</button>
 
 <h1>Venice</h1>
 <hr>
@@ -35,12 +40,12 @@
 	</p>
 	
 	
-<div style="height:100px; width:200px; border:1px solid gray; margin-bottom:20px; background:#eee;">
+<div id = "chart">
 <ol>
-<li><a href="#org">Origins</a></li>
-<li><a href="#ex">Expansion</a></li>
-<li><a href="#dec">Decline</a></li>
-<li><a href="#vd">Video</a></li>
+<li><a href="#org" class="t1">Origins</a></li>
+<li><a href="#ex" class="t1">Expansion</a></li>
+<li><a href="#dec" class="t1">Decline</a></li>
+<li><a href="#vd" class="t1">Video</a></li>
 </ol>
 </div>
 <img src="p08rhwsy.jpg" alt="Venice picture" title="Venice">
@@ -80,39 +85,44 @@ the Ottoman Empire in the Siege of Thessalonica (1422–1430) and sent ships to
  oared vessels were at a disadvantage when it came to 
  traversing oceans, therefore Venice was left behind in the race for colonies
 </p>
-<table style="margin-bottom:20px;">
+<table>
   <tr>
-    <th style="color:red ;">Metropolitan city:</td>
-    <th style="color:green ;">Venice</td>
+    <th class="tb">Metropolitan city:</td>
+    <th class="tb1">Venice</td>
   </tr>
   
   <tr>
-    <th style="color:red ;">Country:</td>
-    <th style="color:green ;">Italy</td>
+    <th class="tb">Country:</td>
+    <th class="tb1">Italy</td>
   </tr>
 
   <tr>
-    <th style="color:red ;">Region:</td>
-    <th style="color:green ;">Vento</td>
+    <th class="tb">Region:</td>
+    <th class="tb1">Vento</td>
   </tr>
   
 </table>
 <h3 id="vd">4.Video</h3>
 <hr>
 <section >
-    <video controls height="150px"  width="300px"  >
-        <source src="sample-video.mp4" type="video/mp4"/>
-      
+<div>
+    <video controls height="200px"  width="300px" id="vid" >
+    <source src="sample-video.mp4" type="video/mp4"/>
     </video>
+	</div>
 </section>
+
+	</div>
+
+</div>
+</div>
+<div id="footer">
 <footer>
-<hr>
 <h5> source page </h5>
 <small>
-<a href="https://en.wikipedia.org/wiki/Venice">https://en.wikipedia.org/wiki/Venice</a>
+<a href="https://en.wikipedia.org/wiki/Venice" id="lk">https://en.wikipedia.org/wiki/Venice</a>
 </small>
 </footer>
-
 </div>
 </body>
 </html>
