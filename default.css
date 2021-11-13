@@ -17,32 +17,6 @@ body{
    color:blue;
    
 }
-
-#cont{
-
-	width:1100px;
-	margin:10px auto;
-	
-}
-
-#cont > .bottom{
-	margin-top:10px;
-	overflow:hidden;
-}
-
-
-#cont > .bottom > .center{
-	width:90%;
-	float:right;
-	background: rgb(231,218,228);
-	padding:20px;
-}
- 
- #cont > .bottom > .center > div  {
- 	border:1px solid #ccc;
-	margin-bottom:10px;
- 
- }
  
  #chart{
  height:100px; 
@@ -87,3 +61,51 @@ cursor:pointer;
 .tb1{ color:green ;}
 
 table{ margin-bottom:20px;}
+
+
+.row {
+	//border:1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column1 {
+	//border:1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.left {
+  background-color: #fff;
+  height: 100%;
+}
+
+.right{
+  background-color: #fff;
+  height:100%;
+}
+
+.total{
+  margin: 15px;
+}
+
+.center{
+  padding: 20px;
+  background-color:rgb(231,218,228);
+  height: 100%;
+
+  
+}
+
+.column2 {
+  //border:1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+    
+}
