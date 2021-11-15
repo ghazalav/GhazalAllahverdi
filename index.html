@@ -9,20 +9,25 @@
    <meta name="description" content="My favorite city">
    <link rel="stylesheet" href="default.css">
    
+    
 </head>
 <body>
-<div id="header"> 
+<div class="header"> 
 <h1> My Favorite City </h1>
 <h6>By Ghazal Allahverdi </h6>
 </div>
+
 <div class='total'>
   <div class='row'>
     <div class='column1'>
       <div class='left'>
-      </div>
+	  <form>
+        <button id = "mode" onclick="myFunction(event)">Dark Mode</button>
+       </form>
+	   </div>
     </div>
     <div class='column2'>
-      <div class='center'>
+      <div class="center" >
 	   <input type="search"  placeholder=" Search Name of the city..." style="width:400px;"  id="inpt">
   <button id="btn">Search</button>
 
@@ -124,7 +129,7 @@ the Ottoman Empire in the Siege of Thessalonica (1422–1430) and sent ships to
     </div>
   </div>
 </div>
-<div id="footer">
+<div class="footer1">
 <footer>
 <h5> source page </h5>
 <small>
@@ -132,5 +137,30 @@ the Ottoman Empire in the Siege of Thessalonica (1422–1430) and sent ships to
 </small>
 </footer>
 </div>
+  <script>
+
+ function myFunction(e){
+   e.preventDefault(e);
+   let head =document.querySelectorAll("div,h1, h6 , hr ,section ,h3,form , p , h5 , h3 , form , small");
+   let i ;
+   for ( i =0 ; i<head.length ; i++){
+    head[i].classList.toggle("dark-mode");
+   
+   }
+    v = document.body;
+    v.classList.toggle("dark-mode");
+    let headd =document.querySelector("header");
+    headd.classList.toggle("dark-mode");
+   let cen = document.querySelector("center");
+    cen.classList.toggle("dark-mode");
+    let foot =document.querySelector("footer1");
+    foot.classList.toggle("dark-mode");
+
+}
+
+</script>
+
+
+
 </body>
 </html>
