@@ -7,7 +7,7 @@ body {
 	border:1px solid #ccc;
 	height:150px;
 	background:rgb(214, 192, 209);
-	 border-radius: 20px;
+	border-radius: 20px;
 }
 
 .header > h1{
@@ -21,11 +21,10 @@ body {
 }
  
  #chart{
- height:100px; 
+ height:175px; 
  width:200px;
- border:1px solid gray;
  margin-bottom:20px; 
- background:#eee;
+
  
  }
  
@@ -121,10 +120,8 @@ table{ margin-bottom:20px;}
 #mode{
 	
    margin-top:20px;
-   height:30px;
-   width:90px;
-   border-radius: 20px;
-   background:white; 
-   border-color:rgb(214, 192, 209);
+   margin-left:20px;
+  
 	
 }
+

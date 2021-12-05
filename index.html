@@ -8,7 +8,16 @@
    <meta name="author" content="Ghazal av">
    <meta name="description" content="My favorite city">
    <link rel="stylesheet" href="default.css">
-   
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+          integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+            crossorigin="anonymous"></script>
     
 </head>
 <body>
@@ -22,7 +31,7 @@
     <div class='column1'>
       <div class='left'>
 	  <form>
-        <button id = "mode" onclick="myFunction(event)">Dark Mode</button>
+	  <button  id="mode" type="button" class="btn btn-dark" onclick="myFunction(event)">Dark</button>
        </form>
 	   </div>
     </div>
@@ -51,12 +60,14 @@
 	
 	
 <div id = "chart">
-<ol>
-<li><a href="#org" class="t1">Origins</a></li>
-<li><a href="#ex" class="t1">Expansion</a></li>
-<li><a href="#dec" class="t1">Decline</a></li>
-<li><a href="#vd" class="t1">Video</a></li>
-</ol>
+ <ul class="nav nav-pills nav-stacked">
+  <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="#org"class="t1" >Origins</a></li>
+                <li class="active"><a href="#ex"class="t1" >Expansion</a></li>
+				<li class="active"><a href="#dec" class="t1">Decline</a></li>
+				<li class="active"><a href="#vd" class="t1">Video</a></li>
+            </ul>
+			</nav>
 </div>
 <img src="p08rhwsy.jpg" alt="Venice picture" title="Venice">
 <h3 id="org">1.Origins</h3>
@@ -121,7 +132,21 @@ the Ottoman Empire in the Siege of Thessalonica (1422–1430) and sent ships to
     </video>
 	</div>
 </section> 
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-end">
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
       </div>
+
     </div>
 	<div class='column1'>
       <div class='right'>
@@ -141,7 +166,7 @@ the Ottoman Empire in the Siege of Thessalonica (1422–1430) and sent ships to
 
  function myFunction(e){
    e.preventDefault(e);
-   let head =document.querySelectorAll("div,h1, h6 , hr ,section ,h3,form , p , h5 , h3 , form , small");
+   let head =document.querySelectorAll("div,h1, h6 , hr ,section ,h3, p , h5 , h3 , small");
    let i ;
    for ( i =0 ; i<head.length ; i++){
     head[i].classList.toggle("dark-mode");
